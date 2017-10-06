@@ -1,0 +1,58 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package primeiraaplicacao;
+
+/**
+ *
+ * @author internet
+ */
+public class Carro {
+    // Atributos  deve ter seu tipo e seu nome: ex: strin nome; int valor;
+    
+    private String chassi;
+    private String cor;
+    private String modelo;
+    
+     //  metodos getters e setters    
+     // void não retonar  valor 
+
+    public String getChassi() {
+        return chassi;
+    }
+
+    /**
+     * atribuir o valor do chassi
+     * @param chassi 
+     */ 
+     public void setChassi(String chassi) {
+        this.chassi = chassi;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+    /**
+     * Atribuir o valor da cor 
+     * @param cor 
+     */
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+    /**
+     * Atribuir valor do modelo do carro
+     * @param modelo 
+     */
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+
+}
+
