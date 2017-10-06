@@ -1,0 +1,40 @@
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package primeiraaplicacao;
+
+import javax.xml.transform.Source;
+
+/**
+ *
+ * @author internet
+ */
+public class PrimeiraAplicacao {
+
+    /**
+     * argumento
+     *
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TO DO code application logic here
+//        int a = 10;
+//        int b = 20;
+//        System.out.println(a + b);
+//        System.out.println(a + a);
+//        System.out.println(b - a);
+
+        Carro meuCarro = new Carro();
+        meuCarro.setChassi("a123b");
+        meuCarro.setCor("Azul"); 
+        meuCarro.setModelo("Uno");
+
+        System.out.println("Chassi" + meuCarro.getChassi());
+        System.out.println("Cor" + meuCarro.getCor());
+        System.out.println("Modelo" + meuCarro.getModelo());
+        
+    }
+}
