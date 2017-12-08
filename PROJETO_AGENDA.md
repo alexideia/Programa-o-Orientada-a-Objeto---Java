@@ -1,11 +1,9 @@
-package aplicacJdbAgenda;
+package agenda;
 
 import java.util.Scanner;
 
-
-public class AplicacJdbAgenda {
-  
-        public static void main (String[] args){
+public class Agenda {
+          public static void main (String[] args){
             
             String [] nome = new String [20];
             String [] endereco = new String [20];
@@ -32,29 +30,29 @@ public class AplicacJdbAgenda {
                  
             do{
                 
-                System.out.println("Escolha o numero da opcao desejada:\n 1- Incluir\n 2- Listar\n 3- Excluir\n 4- Sair ");
+                System.out.println("Escolha Uma Opcao:\n 1- Incluir\n 2- Pesquisar\n 3- Excluir\n 4- Sair ");
                 opcao = ler.nextLine();
                 
                 switch (opcao) {
                     case "1":
-                        //Codigo de insercao
+                        
                         do{
-                            System.out.println("Digite o nome:");
+                            System.out.println("Qual Nome:");
                             nome[posicao] = ler.nextLine();
                             
-                            System.out.println("Digite o endereco:");
+                            System.out.println("Qual Endereco:");
                             endereco [posicao] = ler.nextLine();
                             
-                            System.out.println("Digite o telefone:");
+                            System.out.println("Qual Telefone:");
                             telefone [posicao] = ler.nextLine();
                             
-                            System.out.println("Digite o cep:");
+                            System.out.println("Qual Cep:");
                             cep [posicao] = ler.nextLine();
                             
-                            System.out.println("Digite a idade:");
+                            System.out.println("Qual Idade:");
                             idade [posicao] = ler.nextLine();
                             
-                            System.out.println("Deseja cadastrar um novo usuario?");
+                            System.out.println("Cadastrar Usuario?");
                             continuar = ler.nextLine();
                             
                             posicao++;
@@ -63,7 +61,7 @@ public class AplicacJdbAgenda {
                         break;
                     
                     case "2":
-                        //Codigo de listar
+                        
                         for (int i = 0; i < 19; i++) {
                             
                             if(!nome[i].equals("")){
@@ -80,9 +78,8 @@ public class AplicacJdbAgenda {
                         break;
                         
                     case "3":
-                        //Codigo  exluclusao
                         
-                        System.out.println("Qual usuario deseja excluir?");
+                        System.out.println("Qual usuario excluir");
                         excluirNome = ler.nextLine();
                         
                         for (int i = 0; i < 20; i++) {
@@ -98,15 +95,16 @@ public class AplicacJdbAgenda {
                         break;
                         
                     case "4":
-                        //Codigo para sair
-                        System.out.println("Finalizado.");
+                        
+                        System.out.println("Final.");
                         return;
                     
                     default:
-                        //Invalido
-                        System.out.println("Opcao invalida!Tente novamente.");
+                        
+                        System.out.println("Opcao invalida.");
                         break;
-                } 
+                }
+                
             }while (!opcao.equals("Sair"));
         }
 }
